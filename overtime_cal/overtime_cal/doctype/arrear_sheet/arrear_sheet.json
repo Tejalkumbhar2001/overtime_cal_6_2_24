@@ -1,0 +1,76 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-31 11:16:04.814684",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee_id",
+  "employee_name",
+  "month",
+  "date",
+  "basic_salary",
+  "revised_salary",
+  "amount_differance"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "basic_salary",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Basic Salary",
+   "precision": "2"
+  },
+  {
+   "fieldname": "revised_salary",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Revised Salary",
+   "precision": "2"
+  },
+  {
+   "fieldname": "amount_differance",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Amount Differance",
+   "precision": "2"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Month"
+  },
+  {
+   "fieldname": "employee_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee ID"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-01 15:39:54.747704",
+ "modified_by": "Administrator",
+ "module": "overtime_cal",
+ "name": "Arrear Sheet",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

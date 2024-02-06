@@ -1,0 +1,255 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:AC-{MM}-{YY}-{###}",
+ "creation": "2024-01-30 19:14:49.482142",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "company",
+  "column_break_zzp0v",
+  "date",
+  "section_break_emn2y",
+  "status",
+  "column_break_txe3z",
+  "department",
+  "column_break_fcywk",
+  "branch",
+  "section_break_5djsg",
+  "get_employee_details",
+  "section_break_c2vul",
+  "column_break_fe200",
+  "column_break_6rdus",
+  "column_break_bbrs8",
+  "column_break_fdqfr",
+  "column_break_mfhnz",
+  "column_break_itjir",
+  "check_all",
+  "section_break_vmk5j",
+  "employee_list",
+  "section_break_qd5mx",
+  "from_date",
+  "column_break_exjfg",
+  "to_date",
+  "column_break_x2bpw",
+  "arrear_creadited_date",
+  "section_break_wy9n0",
+  "calculate_arrear",
+  "total_arrear_for_employee_section",
+  "total_arrear_for_employee",
+  "arrear_sheet_section",
+  "arrear_sheet",
+  "amended_from",
+  "open_salary_slip"
+ ],
+ "fields": [
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_zzp0v",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_qd5mx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "from_date",
+   "fieldtype": "Date",
+   "label": "Arrear Calculation -From Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_exjfg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "to_date",
+   "fieldtype": "Date",
+   "label": "Arrear Calculation -To Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_c2vul",
+   "fieldtype": "Section Break",
+   "label": "Employee Details"
+  },
+  {
+   "fieldname": "employee_list",
+   "fieldtype": "Table",
+   "label": "Employee List",
+   "options": "Employee List"
+  },
+  {
+   "fieldname": "arrear_sheet_section",
+   "fieldtype": "Section Break",
+   "label": "Arrear Sheet"
+  },
+  {
+   "fieldname": "arrear_sheet",
+   "fieldtype": "Table",
+   "label": "Details Arrear of Employee",
+   "options": "Arrear Sheet"
+  },
+  {
+   "fieldname": "get_employee_details",
+   "fieldtype": "Button",
+   "label": "Get Employee Details"
+  },
+  {
+   "fieldname": "section_break_emn2y",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Active\nInactive\nSuspended\nLeft"
+  },
+  {
+   "fieldname": "column_break_txe3z",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "column_break_fcywk",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "branch",
+   "fieldtype": "Link",
+   "label": "Branch",
+   "options": "Branch"
+  },
+  {
+   "fieldname": "section_break_5djsg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_x2bpw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "arrear_creadited_date",
+   "fieldtype": "Date",
+   "label": "Arrear Creadited Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "total_arrear_for_employee_section",
+   "fieldtype": "Section Break",
+   "label": "Total Arrear For Employee"
+  },
+  {
+   "fieldname": "total_arrear_for_employee",
+   "fieldtype": "Table",
+   "label": "Total Arrear Details For Employee",
+   "options": "Total Arrear Calculated"
+  },
+  {
+   "fieldname": "calculate_arrear",
+   "fieldtype": "Button",
+   "label": "Calculate Arrear"
+  },
+  {
+   "fieldname": "section_break_wy9n0",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "check_all",
+   "fieldtype": "Button",
+   "label": "Check All"
+  },
+  {
+   "fieldname": "column_break_fe200",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_6rdus",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_bbrs8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_vmk5j",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_fdqfr",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_mfhnz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_itjir",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Arrear Calculation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "open_salary_slip",
+   "fieldtype": "Button",
+   "label": "Open Salary Slip"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-02-03 15:29:33.180195",
+ "modified_by": "Administrator",
+ "module": "overtime_cal",
+ "name": "Arrear Calculation",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
